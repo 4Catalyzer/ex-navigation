@@ -10,7 +10,8 @@ import {
 } from 'react-native';
 import PureComponent from './utils/PureComponent';
 
-import { Components } from 'exponent';
+//import { Components } from 'exponent';
+const Components = {};
 
 import ExNavigationAlertBar from './ExNavigationAlertBar';
 import { withNavigation } from './ExNavigationComponents';

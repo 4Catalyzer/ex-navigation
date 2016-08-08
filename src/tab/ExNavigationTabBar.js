@@ -8,7 +8,8 @@ import {
   View,
 } from 'react-native';
 
-import { Components } from 'exponent';
+//import { Components } from 'exponent';
+const Components = {};
 
 import TabBadge from '../ExNavigationBadge';
 
