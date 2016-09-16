@@ -59,10 +59,18 @@ const titleStyles = StyleSheet.create({
 
   titleText: {
     flex: 1,
-    fontSize: 18,
-    fontWeight: '500',
     color: 'rgba(0, 0, 0, .9)',
-    textAlign: Platform.OS === 'ios' ? 'center' : 'left',
+    ...Platform.select({
+      ios: {
+        fontSize: 18,
+        fontWeight: '500',
+        textAlign: 'center',
+      },
+      android: {
+        fontSize: 20,
+        textAlign: 'left',
+      },
+    }),
   },
 });
 
