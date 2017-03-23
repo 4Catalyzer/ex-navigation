@@ -1,6 +1,20 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Image, StatusBar, StyleSheet, Text, View } from 'react-native';
 import { TabNavigation, TabNavigationItem } from '@expo/ex-navigation';
+=======
+import {
+  Image,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
+import {
+  TabNavigation,
+  TabNavigationItem,
+} from '@expo/ex-navigation';
+>>>>>>> f9774fb... Vendor NavigationExperimental, update example to sdk15
 import { Ionicons } from '@expo/vector-icons';
 
 function getColor(isSelected) {
