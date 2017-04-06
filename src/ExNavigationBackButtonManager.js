@@ -14,7 +14,7 @@ const Handler = BackHandler ? BackHandler : BackAndroid;
  * Manages a global listener, as well as any custom listeners, on the
  * Android hardware back button.
  *
- * Rather than using the BackAnroid React Native module directly, use this
+ * Rather than using the BackHandler React Native module directly, use this
  * class to manage the any custom listeners or to enable or disable the
  * global back button listener.
  */

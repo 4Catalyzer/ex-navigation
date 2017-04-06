@@ -2,8 +2,6 @@ import React from 'react';
 import { Animated, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 
-import PureComponent from './utils/PureComponent';
-
 import * as NavigationStyles from './ExNavigationStyles';
 
 class SceneView extends React.Component<any, SceneViewProps, any> {
@@ -34,7 +32,7 @@ class SceneView extends React.Component<any, SceneViewProps, any> {
   }
 }
 
-export default class ExNavigationStackItem extends PureComponent {
+export default class ExNavigationStackItem extends React.PureComponent {
   render() {
     let {
       sceneAnimations,

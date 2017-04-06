@@ -5,7 +5,6 @@
 import React, { Children } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
-import PureComponent from '../utils/PureComponent';
 import StaticContainer from 'react-static-container';
 
 import invariant from 'invariant';
@@ -70,7 +69,7 @@ type State = {
   parentNavigatorUID: string,
 };
 
-class ExNavigationSlidingTab extends PureComponent<any, Props, State> {
+class ExNavigationSlidingTab extends React.PureComponent<any, Props, State> {
   props: Props;
   state: State;
 

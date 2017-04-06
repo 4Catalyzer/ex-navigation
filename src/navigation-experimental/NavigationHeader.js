@@ -38,7 +38,6 @@ const NavigationPropTypes = require('./NavigationPropTypes');
 const React = require('react');
 const ReactNative = require('react-native');
 const PropTypes = require('prop-types');
-const ReactComponentWithPureRenderMixin = require('react-addons-pure-render-mixin');
 
 const {
   Animated,
@@ -82,7 +81,7 @@ type SubViewName = 'left' | 'title' | 'right';
 const APPBAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
 const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : 0;
 
-class NavigationHeader extends React.Component<DefaultProps, Props, any> {
+class NavigationHeader extends React.PureComponent<DefaultProps, Props, any> {
   props: Props;
 
   static defaultProps = {
@@ -115,14 +114,6 @@ class NavigationHeader extends React.Component<DefaultProps, Props, any> {
     statusBarHeight: PropTypes.number,
     viewProps: PropTypes.shape(ViewPropTypes),
   };
-
-  shouldComponentUpdate(nextProps: Props, nextState: any): boolean {
-    return ReactComponentWithPureRenderMixin.shouldComponentUpdate.call(
-      this,
-      nextProps,
-      nextState
-    );
-  }
 
   _tvEventHandler: TVEventHandler;
 

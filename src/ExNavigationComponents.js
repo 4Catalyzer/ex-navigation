@@ -10,7 +10,6 @@ import UUID from 'uuid-js';
 import invariant from 'invariant';
 import { createSelector } from 'reselect';
 import hoistStatics from 'hoist-non-react-statics';
-import PureComponent from './utils/PureComponent';
 import shallowEqual from 'fbjs/lib/shallowEqual';
 
 import ExNavigationContext from './ExNavigationContext';
@@ -162,7 +161,7 @@ export function withNavigation<T>(
   WrappedComponent: ReactClass<T>,
   { withRef } = {}
 ) {
-  class WithNavigation extends PureComponent {
+  class WithNavigation extends React.PureComponent {
     _wrappedInstance: ReactElement<T>;
 
     static contextTypes = {
@@ -226,7 +225,7 @@ export const createFocusableComponent = (WrappedComponent: ReactClass<any>) => {
   const _componentIsNavigator =
     WrappedComponent.route && WrappedComponent.route.__isNavigator;
 
-  class FocusableComponent extends PureComponent {
+  class FocusableComponent extends React.PureComponent {
     _unsubcribeFromStore: ?Function;
     _prevNavState: ?Object;
     _wrappedInstance: ReactElement<T>;

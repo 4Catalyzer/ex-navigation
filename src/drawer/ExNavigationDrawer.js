@@ -6,7 +6,6 @@ import React, { Children } from 'react';
 import { StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
 import DrawerLayout from 'react-native-drawer-layout-polyfill';
-import PureComponent from '../utils/PureComponent';
 import StaticContainer from 'react-static-container';
 
 import invariant from 'invariant';
@@ -80,7 +79,7 @@ type State = {
   renderedItemKeys: Array<string>,
 };
 
-class ExNavigationDrawer extends PureComponent<any, Props, State> {
+class ExNavigationDrawer extends React.PureComponent<any, Props, State> {
   props: Props;
   state: State;
   _drawerLayout: ?ExNavigationDrawerLayout;
