@@ -31,12 +31,19 @@
     "invariant": "^2.2.1",
     "lodash": "^4.6.1",
     "mirror-creator": "^1.1.0",
+<<<<<<< HEAD
     "react-addons-pure-render-mixin": "^15.5.2",
     "react-addons-shallow-compare": "15.5.2",
     "react-clone-referenced-element": "^1.0.1",
     "react-mixin": "^3.0.5",
     "react-native-drawer-layout-polyfill": "^1.1.0",
     "react-native-tab-view": "^0.0.61",
+=======
+    "react-clone-referenced-element": "^1.0.1",
+    "react-mixin": "^3.0.5",
+    "react-native-drawer-layout-polyfill": "^1.1.0",
+    "react-native-tab-view": "0.0.58",
+>>>>>>> ff5baf7... remove shallow compare dep
     "react-redux": "^4.4.5",
     "react-static-container": "^1.0.0",
     "react-timer-mixin": "^0.13.3",
