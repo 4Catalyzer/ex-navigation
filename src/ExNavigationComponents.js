@@ -150,7 +150,7 @@ import { NavigationPropType, StackNavigatorContextType } from './ExNavigationPro
 
 const NavigatorPropType = PropTypes.object;
 
-export function withNavigation<T>(WrappedComponent: ReactClass<T>, { withRef }) {
+export function withNavigation<T>(WrappedComponent: ReactClass<T>, { withRef } = {}) {
   class WithNavigation extends PureComponent {
     _wrappedInstance: ReactElement<T>;
 
