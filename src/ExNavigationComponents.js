@@ -143,7 +143,7 @@ export function createNavigatorComponent(WrappedComponent: ReactClass<any>) {
 
   ExNavigatorComponent.displayName = `ExNavigatorComponent(${getDisplayName(WrappedComponent)})`;
 
-  return hoistStatics(ExNavigatorComponent, createFocusableComponent(WrappedComponent));
+  return hoistStatics(ExNavigatorComponent, WrappedComponent);
 }
 
 import { NavigationPropType, StackNavigatorContextType } from './ExNavigationPropTypes';
