@@ -21,7 +21,6 @@ export default class CustomNavigationBarExample extends Component {
   static route = {
     navigationBar: {
       title: 'Custom NavigationBar',
-<<<<<<< HEAD
       tintColor: '#FFF',
       renderBackground: props => (
         <Image
@@ -32,10 +31,6 @@ export default class CustomNavigationBarExample extends Component {
           resizeMode={'cover'}
         />
       ),
-=======
-      tintColor: "#FFF",
-      renderBackground: (props) => <Image style={styles.bgImage} source={{uri: 'http://il9.picdn.net/shutterstock/videos/3951179/thumb/1.jpg'}} resizeMode={'cover'} />,
->>>>>>> f9774fb... Vendor NavigationExperimental, update example to sdk15
     },
   };
 

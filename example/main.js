@@ -13,14 +13,7 @@ import EventEmitterExample from './components/EventEmitterExample';
 import CustomNavigationBarExample
   from './components/CustomNavigationBarExample';
 
-<<<<<<< HEAD
 import { createRouter, NavigationProvider } from '@expo/ex-navigation';
-=======
-import {
-  createRouter,
-  NavigationProvider,
-} from '@expo/ex-navigation';
->>>>>>> f9774fb... Vendor NavigationExperimental, update example to sdk15
 
 const assets = [
   require('./assets/beetle.jpg'),

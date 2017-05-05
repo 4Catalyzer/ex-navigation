@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import { View, Text, StyleSheet, StatusBar } from 'react-native';
-=======
-import {
-  View,
-  Text,
-  StyleSheet,
-  StatusBar,
-} from 'react-native';
->>>>>>> f9774fb... Vendor NavigationExperimental, update example to sdk15
 import pak from '@expo/ex-navigation/package.json';
 
 export default class HomeScreen extends Component {

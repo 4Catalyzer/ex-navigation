@@ -8,14 +8,7 @@ import {
   ScrollView,
   TouchableHighlight,
 } from 'react-native';
-<<<<<<< HEAD
 import { TabNavigation, TabNavigationItem } from '@expo/ex-navigation';
-=======
-import {
-  TabNavigation,
-  TabNavigationItem,
-} from '@expo/ex-navigation';
->>>>>>> f9774fb... Vendor NavigationExperimental, update example to sdk15
 import { Ionicons } from '@expo/vector-icons';
 
 function getColor(isSelected) {
