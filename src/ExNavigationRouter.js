@@ -241,11 +241,9 @@ export class ExNavigationRouter<RC: RouteCreator> {
   }
 
   _makeRoute(RouteComponent: ReactClass<{}>): RouteRenderer {
-    const FocusAwareRouteComponent = createFocusableComponent(
-      withNavigation(RouteComponent)
-    );
+    const RouteComponentWithNavigation = withNavigation(RouteComponent);
     return ({ params, config }: ExNavigationState): ReactElement<{}> => (
-      <FocusAwareRouteComponent
+      <RouteComponentWithNavigation
         {...(config && config.defaultParams ? config.defaultParams : {})}
         {...params}
       />
