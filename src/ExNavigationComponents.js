@@ -67,7 +67,7 @@ export function createNavigatorComponent(WrappedComponent: ReactClass<any>) {
   // Connect the wrapped component to the correct navigation state
   const ConnectedWrappedComponent = connect(makeMapStateToProps, null, null, {
     withRef: true,
-  })(createFocusableComponent(WrappedComponent));
+  })(WrappedComponent);
 
   class ExNavigatorComponent extends React.Component {
     props: Props;
